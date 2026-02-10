@@ -1,0 +1,142 @@
+.mainPageContainer {
+  min-height: 100vh;
+  color: #6e1c3a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4em;
+  animation: fadeIn 1s ease-in-out;
+  margin-bottom: 30px;
+}
+
+.mainPageContainer .mainPageContent {
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.mainPageContainer .mainPageTitle {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.mainPageContainer .mainPageSubtitle {
+  font-size: 1.25rem;
+  margin-bottom: 1em;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.mainPageContainer .mainPageContentTitle {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.mainPageContainer .cardContainer {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+  padding: 20px;
+  z-index: 1;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.mainPageContainer .mainPageBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  width: 100% !important;
+  height: 100% !important;
+  background-image: url('/assets/infoBackground.jpeg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  z-index: -1;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Для мобильных устройств */
+@media (max-width: 599px) {
+  .mainPageContainer {
+    display: flex;
+    padding-top: 2em;
+  }
+
+  .mainPageContainer .mainPageTitle {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .mainPageContainer .mainPageSubtitle {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .mainPageContainer .mainPageContentTitle {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .mainPageContainer .cardContainer {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .mainPageContainer .mainPageBackground {
+    width: 100% !important;
+    border-radius: 8px;
+  }
+}
+/* Для планшетов */
+@media (min-width: 600px) and (max-width: 1199px) {
+  .mainPageContainer {
+    display: flex;
+    width: 100%;
+    padding-top: 3em;
+  }
+
+  .mainPageContainer .mainPageTitle {
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  .mainPageContainer .mainPageSubtitle {
+    width: 100%;
+    font-size: 1.25rem;
+  }
+
+  .mainPageContainer .mainPageContentTitle {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .mainPageContainer .cardContainer {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .mainPageContainer .mainPageBackground {
+    width: 100% !important;
+    border-radius: 12px;
+  }
+}

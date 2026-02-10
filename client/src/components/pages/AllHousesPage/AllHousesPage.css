@@ -1,0 +1,121 @@
+.cottages-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.allHousesTitle {
+  font-size: bold !important;
+  color: #6e1c3a;
+  margin-bottom: 20px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.cottages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(49%, 1fr)); /* Сетка карточек */
+  gap: 20px; /* Расстояние между карточками */
+  justify-content: center; /* Центрирование карточек */
+  margin-top: 20px;
+  width: 100%; /* Использование полной ширины контейнера */
+  animation: fadeIn 1s ease-in-out;
+}
+
+.cottage-link {
+  text-decoration: none; /* Убираем подчеркивание ссылок */
+  animation: fadeIn 1s ease-in-out;
+}
+
+.cottage-card {
+  width: 100%; /* Карточка занимает всю доступную ширину в колонке */
+  max-width: 100%; /* Максимальная ширина карточки */
+  margin: 0 auto; /* Центрирование карточки */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+  border-radius: 8px; /* Закругленные углы */
+  animation: fadeIn 1s ease-in-out;
+}
+
+.add-button {
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgb(224, 214, 202);
+  animation: fadeIn 1s ease-in-out;
+}
+.modalButton {
+  margin: 10px !important;
+  animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Для мобильных устройств */
+@media (max-width: 599px) {
+  .cottages-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cottage-card {
+    width: 100%;
+  }
+
+  .add-button {
+    width: 100%;
+  }
+
+  .modalContent {
+    padding: 10px;
+    width: 90%;
+  }
+
+  .modalButton {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* Для планшетов */
+@media (min-width: 767px) and (max-width: 1199px) {
+  .cottages-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .cottage-card {
+    width: 100%;
+  }
+
+  .add-button {
+    width: 100%;
+  }
+
+  .modalContent {
+    padding: 15px;
+    width: 80%;
+  }
+
+  .modalButton {
+    width: 100%;
+    padding: 10px 15px;
+  }
+}

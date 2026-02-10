@@ -1,0 +1,117 @@
+.inlineCardContainer {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.horizontalCard {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px 24px;
+  width: 250px;
+  max-width: 250px;
+  text-align: left;
+  transition:
+    background-color 0.5s,
+    color 0.5s;
+}
+
+.iconPlaceholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6e1c3a;
+  font-weight: bold;
+  margin-right: 16px;
+  font-size: 18px;
+  transition: color 0.5s;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardTitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  transition: color 0.5s;
+}
+
+.cardText {
+  font-size: 16px;
+  color: #666;
+  transition: color 0.5s;
+}
+
+/* Hover effect */
+.horizontalCard:hover {
+  background-color: #6e1c3a;
+}
+
+.horizontalCard:hover .iconPlaceholder,
+.horizontalCard:hover .cardTitle,
+.horizontalCard:hover .cardText {
+  color: white; /* Set to white for readability on the dark background */
+}
+
+/* Для мобильных устройств */
+@media (max-width: 599px) {
+  .inlineCardContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .horizontalCard {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .iconPlaceholder {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  .cardTitle {
+    font-size: 16px;
+  }
+
+  .cardText {
+    font-size: 14px;
+  }
+}
+
+/* Для планшетов */
+@media (min-width: 767px) and (max-width: 1199px) {
+  .inlineCardContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .horizontalCard {
+    width: 45%;
+    max-width: 45%;
+    padding: 12px;
+  }
+
+  .iconPlaceholder {
+    font-size: 18px;
+    margin-right: 12px;
+  }
+
+  .cardTitle {
+    font-size: 18px;
+  }
+
+  .cardText {
+    font-size: 16px;
+  }
+}

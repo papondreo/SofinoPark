@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contactsMainContainer {
+  padding-top: 10rem;
+  height: 70vh;
+  animation: fadeIn 1s ease-in-out;
+}
+.containerContacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Текстовый контейнер */
+.text {
+  text-align: center;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Заголовок контактов */
+.contacts {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Телефон */
+.phone {
+  font-size: 18px;
+  color: #6e1c3a;
+  margin: 10px 0;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Email */
+.email {
+  font-size: 18px;
+  color: #6e1c3a;
+  margin: 10px 0;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Описание */
+.description {
+  font-size: 16px;
+  color: #555;
+  margin: 10px 0;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Форма */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Поля ввода */
+.form .MuiTextField-root {
+  width: 100%;
+  margin-bottom: 15px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Кнопка */
+.button {
+  background-color: #6e1c3a;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.button:hover {
+  background-color: #5a172e;
+  color: #fff;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Для мобильных устройств */
+@media (max-width: 599px) {
+  .contactsMainContainer {
+    padding-top: 5rem;
+  }
+
+  .containerContacts {
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .contacts {
+    font-size: 10px;
+  }
+
+  .phone,
+  .email {
+    font-size: 10px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .form .MuiTextField-root {
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* Для планшетов */
+@media (min-width: 767px) and (max-width: 1199px) {
+  .contactsMainContainer {
+    padding-top: 8rem;
+  }
+
+  .containerContacts {
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .contacts {
+    font-size: 22px;
+  }
+
+  .phone,
+  .email {
+    font-size: 18px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .form .MuiTextField-root {
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+    padding: 10px 15px;
+  }
+}

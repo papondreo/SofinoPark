@@ -1,0 +1,160 @@
+.infoBlock {
+  min-height: 100vh;
+  color: #6e1c3a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.infoBlock .mainPageContentTitle {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  color: #6e1c3a;
+  text-align: center;
+  padding-top: 30px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.descriptionCard {
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 16px;
+  display: flex;
+  gap: 16px;
+  justify-content: space-around;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.descriptionCardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 33%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.descriptionCard .svg {
+  width: 50px;
+  height: 50px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.mainPageCardTitle {
+  font-size: 2rem !important;
+  font-weight: bold !important;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.descriptionBoxContent .mainPageCardTitle {
+  border-bottom: 1px solid #ccc;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.cardDescription {
+  font-size: 16px !important;
+  color: #666;
+  line-height: 1.5;
+  padding-top: 5px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.infoBlock .infoImage {
+  max-width: 66%;
+  border-radius: 16px;
+  animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Для мобильных устройств */
+@media (max-width: 599px) {
+  .infoBlock {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .infoBlock .mainPageContentTitle {
+    font-size: 1.5rem;
+  }
+
+  .descriptionCard {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .descriptionCardContent {
+    width: 100%;
+    align-items: center;
+  }
+
+  .descriptionCard .svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .mainPageCardTitle {
+    font-size: 1.5rem !important;
+  }
+
+  .cardDescription {
+    font-size: 14px !important;
+  }
+
+  .infoBlock .infoImage {
+    max-width: 100%;
+  }
+}
+
+/* Для планшетов */
+@media (min-width: 767px) and (max-width: 1199px) {
+  .infoBlock {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .infoBlock .mainPageContentTitle {
+    font-size: 2rem;
+  }
+
+  .descriptionCard {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  .descriptionCardContent {
+    width: 100%;
+    align-items: center;
+  }
+
+  .descriptionCard .svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .mainPageCardTitle {
+    font-size: 2rem !important;
+  }
+
+  .cardDescription {
+    font-size: 16px !important;
+  }
+
+  .infoBlock .infoImage {
+    max-width: 100%;
+  }
+}

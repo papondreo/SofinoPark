@@ -1,0 +1,166 @@
+/* General container styles */
+.navbarContainer {
+  flex-grow: 1;
+  border-bottom: 1px solid #ddd;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* AppBar styles */
+.navbarAppBar {
+  color: #4a4a4a !important; /* Ensures text color is applied */
+  background-color: #fff !important; /* Ensures background color */
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Toolbar styles */
+.navbarToolbar {
+  display: flex !important;
+  justify-content: space-between !important;
+  padding: 10px 40px !important;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Left section styles */
+.navbarLeft {
+  text-align: left;
+  min-width: 250px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.navbarSubtext {
+  color: #6e1c3a !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Center title styles */
+.navbarTitle {
+  font-weight: bold !important;
+  color: #6e1c3a !important;
+  font-size: 48px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em !important;
+  text-decoration: none !important;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Right section styles */
+.navbarRight {
+  min-width: 250px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.navbarContactInfo {
+  text-align: right;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.navbarPhone {
+  color: #6e1c3a !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.navbarEmail {
+  color: #2e4d39 !important;
+  font-size: 16px !important;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Link section styles */
+.navbarLinksContainer {
+  background-color: #fff !important;
+  padding: 10px 0 !important;
+  border-top: 1px solid #ddd !important;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.navbarLink {
+  color: #6e1c3a !important;
+  font-weight: bold !important;
+  font-size: 14px !important;
+  text-transform: uppercase !important;
+  animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Для мобильных устройств */
+@media (max-width: 599px) {
+  .navbarToolbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px !important;
+  }
+
+  .navbarLeft,
+  .navbarRight {
+    min-width: auto;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .navbarTitle {
+    font-size: 24px !important;
+    margin-bottom: 10px;
+  }
+
+  .navbarSubtext,
+  .navbarPhone,
+  .navbarEmail {
+    font-size: 14px !important;
+  }
+
+  .navbarLinksContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbarLink {
+    margin: 5px 0;
+  }
+}
+
+/* Для планшетов */
+@media (min-width: 767px) and (max-width: 1199px) {
+  .navbarToolbar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px !important;
+  }
+
+  .navbarLeft,
+  .navbarRight {
+    min-width: 200px;
+  }
+
+  .navbarTitle {
+    font-size: 24px !important;
+  }
+
+  .navbarSubtext,
+  .navbarPhone,
+  .navbarEmail {
+    font-size: 16px !important;
+  }
+
+  .navbarLinksContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbarLink {
+    margin: 0 10px;
+  }
+}

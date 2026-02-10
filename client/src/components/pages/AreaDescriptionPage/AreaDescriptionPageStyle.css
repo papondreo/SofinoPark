@@ -1,0 +1,124 @@
+.mainPageContentTitle {
+  font-weight: bold !important;
+  margin-top: 30px !important;
+  padding: 10px !important;
+  color: #6e1c3a;
+  text-align: center;
+  padding-top: 30px;
+  animation: fadeIn 1s ease-in-out;
+}
+.buttonModal {
+  margin: 10px !important;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Для мобильных устройств */
+@media (max-width: 599px) {
+  .containerContacts {
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .text {
+    margin-bottom: 10px;
+  }
+
+  .contacts {
+    font-size: 20px;
+  }
+
+  .phone,
+  .email {
+    font-size: 16px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .townMap {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+  .townMapMap {
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .sectorModal {
+    width: 90%;
+  }
+
+  .buttonModal {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .tooltip {
+    width: 90%;
+  }
+}
+
+/* Для планшетов */
+@media (min-width: 767px) and (max-width: 1199px) {
+  .containerContacts {
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .text {
+    margin-bottom: 15px;
+  }
+
+  .contacts {
+    font-size: 22px;
+  }
+
+  .phone,
+  .email {
+    font-size: 18px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .townMap {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+  }
+
+  .townMapMap {
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .sectorModal {
+    width: 80%;
+  }
+
+  .buttonModal {
+    width: 100%;
+    padding: 10px 15px;
+  }
+
+  .tooltip {
+    width: 80%;
+  }
+}

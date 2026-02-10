@@ -1,0 +1,91 @@
+.errorPageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #a19b9d;
+  padding: 20px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.errorImg {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.6s ease,
+    box-shadow 0.3s ease;
+  cursor: pointer;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.errorImg:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.errorImg.flipped {
+  transform: rotateY(180deg);
+}
+
+.errorButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: #4caf50;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.errorButton:hover {
+  background-color: #45a049;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Для мобильных устройств */
+@media (max-width: 599px) {
+  .errorPageContainer {
+    padding: 10px;
+  }
+
+  .errorImg {
+    max-width: 80%;
+  }
+
+  .errorButton {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* Для планшетов */
+@media (min-width: 600px) and (max-width: 1199px) {
+  .errorPageContainer {
+    padding: 15px;
+  }
+
+  .errorImg {
+    max-width: 90%;
+  }
+
+  .errorButton {
+    width: 100%;
+    padding: 10px 15px;
+  }
+}

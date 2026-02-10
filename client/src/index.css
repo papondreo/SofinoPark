@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/assets/Gilroy-Light.otf') format('opentype');
+  font-weight: 300; /* Light */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/assets/Gilroy-ExtraBold.otf') format('opentype');
+  font-weight: 800; /* ExtraBold */
+  font-style: normal;
+}
+
+body {
+  font-family: 'Gilroy', sans-serif;
+}

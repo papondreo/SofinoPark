@@ -1,0 +1,105 @@
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  padding: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.loginPaper {
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.loginTitle {
+  margin-bottom: 20px;
+  font-weight: bold;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.loginInput {
+  margin-bottom: 15px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.loginButton {
+  margin-top: 10px;
+  padding: 10px 0;
+  animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Для мобильных устройств */
+@media (max-width: 599px) {
+  .loginContainer {
+    padding: 10px;
+  }
+
+  .loginPaper {
+    padding: 10px;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .loginTitle {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .loginInput {
+    margin-bottom: 10px;
+  }
+
+  .loginButton {
+    margin-top: 5px;
+    padding: 5px 0;
+  }
+}
+
+/* Для планшетов */
+@media (min-width: 767px) and (max-width: 1199px) {
+  .loginContainer {
+    padding: 15px;
+  }
+
+  .loginPaper {
+    padding: 15px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .loginTitle {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+
+  .loginInput {
+    margin-bottom: 12px;
+  }
+
+  .loginButton {
+    margin-top: 8px;
+    padding: 8px 0;
+  }
+}
